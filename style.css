@@ -1,1 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Maven Pro';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-image: url(./Assets/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 26rem;
+}
