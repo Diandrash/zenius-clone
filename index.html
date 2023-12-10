@@ -6,7 +6,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body style="height: 1000vh; background-color: aliceblue;">
+<body style="height: 1000vh;" class="bg-stone-100">
 
     <!-- START NAVBAR SECTION  -->
     <div class="nav flex bg-white justify-between p-5">
@@ -69,7 +69,7 @@
             <h2 class="mb-10 text-white text-base font-semibold mt-3">Kita gak cuma ngasi pelajaran, tapi cara berpikir. Tanya aja ke jutaan alumni yang udah masuk kampus idaman!</h2>
 
 
-            <button class="py-3 px-7 rounded-lg bg-amber-400 text-purple-700 text-base font-bold">Ayo Mulai!</button>
+            <button class="py-3 px-7 rounded-lg  text-purple-700 text-base font-bold">Ayo Mulai!</button>
         </div>
 
         <div class="hero-image">
@@ -120,31 +120,101 @@
             </div>
         </div>
 
-        <div class="material-cards mt-10 grid grid-cols-4 ">
+        <div class="material-cards flex justify-between flex-wrap">
 
-            <div class="card bg-amber-400 w-40 flex flex-col items-center text-center">
-                <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-1.png" alt="">
-                <h2 class="text-base font-semibold">Penalaran Umum</h2>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-40 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-1.png" alt="">
+                    <h2 class="text-base font-semibold">Penalaran Umum</h2>
+                </div>
             </div>
-            <div class="card bg-amber-400 w-40 flex flex-col items-center text-center">
-                <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-1.png" alt="">
-                <h2 class="text-base font-semibold">Penalaran Umum</h2>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-96 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-2.png" alt="">
+                    <h2 class="text-base font-semibold">PK & Penalaran Matematika</h2>
+                </div>
+            </div>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-96 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-3.png" alt="">
+                    <h2 class="text-base font-semibold">PBM, PPU, dan Literasi B. Indonesia</h2>
+                </div>
+            </div>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-40 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-4.png" alt="">
+                    <h2 class="text-base font-semibold">Literasi Bahasa Inggris</h2>
+                </div>
             </div>
 
-            <div class="card bg-amber-400 w-40 flex flex-col items-center text-center">
-                <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-1.png" alt="">
-                <h2 class="text-base font-semibold">Penalaran Umum</h2>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-96 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-5.png" alt="">
+                    <h2 class="text-base font-semibold">Soal-soal Penalaran Umum</h2>
+                </div>
+            </div>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-96 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-6.png" alt="">
+                    <h2 class="text-base font-semibold">Soal-soal PK & Penalaran Matematika</h2>
+                </div>
+            </div>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-96 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-7.png" alt="">
+                    <h2 class="text-base font-semibold">Soal-soal PBM, PPU, dan Literasi B. Indonesia</h2>
+                </div>
+            </div>
+            <div class="container-card mt-16 w-64  flex justify-center">
+                <div class="card  w-40 flex flex-col items-center text-center">
+                    <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-8.png" alt="">
+                    <h2 class="text-base font-semibold">Soal-soal Literasi Bahasa Inggris</h2>
+                </div>
             </div>
 
-            <div class="card bg-amber-400 w-40 flex flex-col items-center text-center">
-                <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-1.png" alt="">
-                <h2 class="text-base font-semibold">Penalaran Umum</h2>
-            </div>
+
 
         </div>
     </section>
     <!-- END MATERIAL SECTION -->
 
+    <!-- START FEATURE SECTION -->
+    <section class="features mx-16 mt-24" id="features">
+        <div class="text-features">
+            <h1 class="text-2xl font-bold">Cek Fitur Zenius yang Bikin Belajar Tambah Seru!</h1>
+        </div>
+
+        <div class="features-items mt-14 flex justify-around">
+
+            <div class="item-feature flex flex-col items-center text-center">
+                <img class="w-16" src="./Assets/feature-1.png" alt="">
+                <h2 class="text-base font-medium mt-6">Zenius Learning</h2>
+            </div>
+
+            <div class="item-feature flex flex-col items-center text-center">
+                <img class="w-16" src="./Assets/feature-2.png" alt="">
+                <h2 class="text-base font-medium mt-6">Try Out</h2>
+            </div>
+
+            <div class="item-feature flex flex-col items-center text-center">
+                <img class="w-16" src="./Assets/feature-3.png" alt="">
+                <h2 class="text-base font-medium mt-6">Live Class</h2>
+            </div>
+
+            <div class="item-feature flex flex-col items-center text-center">
+                <img class="w-16" src="./Assets/feature-4.png" alt="">
+                <h2 class="text-base font-medium mt-6">Zenbot</h2>
+            </div>
+
+        </div>
+
+        <div class="images-feature mt-24 flex justify-between">
+            <img class="w-96 mx-2 " src="./Assets/package-1.png" alt="">
+            <img class="w-96 mx-2" src="./Assets/package-2.png" alt="">
+            <img class="w-96 mx-2" src="./Assets/package-3.png" alt="">
+        </div>
+    </section>
+    <!-- END FEATURE SECTION -->
 
 
     <script src="https://kit.fontawesome.com/1319cd5cd7.js" crossorigin="anonymous"></script>
