@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <title>Zenius Clone</title>
 </head>
-<body style="height: 1000vh;" class="bg-stone-100">
+<body class="bg-white">
 
     <!-- START NAVBAR SECTION  -->
     <div class="nav flex bg-white justify-between p-5">
@@ -69,7 +70,7 @@
             <h2 class="mb-10 text-white text-base font-semibold mt-3">Kita gak cuma ngasi pelajaran, tapi cara berpikir. Tanya aja ke jutaan alumni yang udah masuk kampus idaman!</h2>
 
 
-            <button class="py-3 px-7 rounded-lg  text-purple-700 text-base font-bold">Ayo Mulai!</button>
+            <button class="py-2 px-8 rounded-lg  text-purple-900 text-base font-bold bg-amber-300">Ayo Mulai!</button>
         </div>
 
         <div class="hero-image">
@@ -179,7 +180,7 @@
     <!-- END MATERIAL SECTION -->
 
     <!-- START FEATURE SECTION -->
-    <section class="features mx-16 mt-24" id="features">
+    <section class="features mx-14 mt-24" id="features">
         <div class="text-features">
             <h1 class="text-2xl font-bold">Cek Fitur Zenius yang Bikin Belajar Tambah Seru!</h1>
         </div>
@@ -208,13 +209,251 @@
 
         </div>
 
-        <div class="images-feature mt-24 flex justify-between">
-            <img class="w-96 mx-2 " src="./Assets/package-1.png" alt="">
-            <img class="w-96 mx-2" src="./Assets/package-2.png" alt="">
-            <img class="w-96 mx-2" src="./Assets/package-3.png" alt="">
+    </section>
+    <div class="images-feature mt-24 mx-10 flex flex-wrap justify-between">
+        <img class="w-96 mx-0 mt-2" src="./Assets/package-1.png" alt="">
+        <img class="w-96 mx-0 mt-2" src="./Assets/package-2.png" alt="">
+        <img class="w-96 mx-0 mt-2" src="./Assets/package-3.png" alt="">
+    </div>
+    <!-- END FEATURE SECTION -->
+
+
+    <!-- START YOUTUBE SECTION -->
+    <section class="youtube h-screen bg-blue-100 mt-16" id="youtube">
+        <div class="area flex flex-col py-10 items-center text-center">
+            <h1 class="text-2xl font-bold">Tonton Kisah Alumni Zenius yang Bikin Bangga :')</h1>
+            <img src="/Assets/thumbnail.jpeg" class="w-6/12 mt-16 bg-red-200" alt="youtube thumbnail" style="border-radius: 2rem;">
         </div>
     </section>
-    <!-- END FEATURE SECTION -->
+    <!-- END YOUTUBE SECTION -->
+
+    <!-- START TUTOR SECTION -->
+    <section class="tutor mt-16 mx-16" id="tutor">
+        <div class="tutor-title">
+            <h1 class="text-2xl font-bold">Tutor-tutor Keren Buat Bikin Belajar Asik dan Efektif!</h1>
+        </div>
+
+        <div class="tutor-cards flex flex-wrap justify-between mt-10">
+            <img class="w-64 mt-3" src="./Assets/tutor-1.png" alt="">
+            <img class="w-64 mt-3" src="./Assets/tutor-2.png" alt="">
+            <img class="w-64 mt-3" src="./Assets/tutor-3.png" alt="">
+            <img class="w-64 mt-3" src="./Assets/tutor-4.png" alt="">
+        </div>
+    </section>
+    <!-- END TUTOR SECTION -->
+
+    <!-- START TESTIMONIALS SECTION -->
+    <section class="testimonials mx-14 mt-16" id="testimonials">
+        <div class="testimonial-title">
+            <h1 class="text-2xl font-bold">Kata Mereka yang Pernah Belajar di Zenius</h1>
+        </div>
+
+        <div class="testimonials-cards mt-8 flex justify-between flex-wrap">
+
+            <div class="card-testimoni  ">
+                <div class="image-testimoni bg-white">
+                    <img class="w-64" src="./Assets/testimoni-1.png" alt="">
+                </div>
+                <div class="profile-area mt-3 flex px-4 bg-white rounded-b-lg  shadow-lg">
+                    <img class="w-10 mt-2 h-10 mr-2" src="./Assets/profile-testimoni-1.png" alt="">
+
+                    <div class="text-area w-40 pb-4 ">
+                        <h2 class="text-base font-semibold">Redi Sunarta</h2>
+                        <p class="text-xs font-medium opacity-70">Ilmu Ekonomi - Universitas Indonesia</p>
+                    </div>
+
+                    <img class="w-7 h-7 ml-3" src="./Assets/logo-zenius-small.png" alt="">
+                </div>
+            </div>
+
+            <div class="card-testimoni  ">
+                <div class="image-testimoni bg-white">
+                    <img class="w-64" src="./Assets/testimoni-2.png" alt="">
+                </div>
+                <div class="profile-area mt-3 flex px-4 rounded-b-lg  shadow-lg">
+                    <img class="w-10 mt-2 h-10 mr-2" src="./Assets/profile-testimoni-2.png" alt="">
+
+                    <div class="text-area w-40 pb-4 ">
+                        <h2 class="text-base font-semibold">Melissa Anggiarti</h2>
+                        <p class="text-xs font-medium opacity-70">Pilot - Grauda Indonesia</p>
+                    </div>
+
+                    <img class="w-7 h-7 ml-3" src="./Assets/logo-zenius-small.png" alt="">
+                </div>
+            </div>
+
+            <div class="card-testimoni  ">
+                <div class="image-testimoni bg-white">
+                    <img class="w-64" src="./Assets/testimoni-3.png" alt="">
+                </div>
+                <div class="profile-area mt-3 flex px-4 rounded-b-lg shadow-lg">
+                    <img class="w-10 mt-2 h-10 mr-2" src="./Assets/profile-testimoni-3.png" alt="">
+
+                    <div class="text-area w-40 pb-4 ">
+                        <h2 class="text-base font-semibold">Agam Syah Fadila</h2>
+                        <p class="text-xs font-medium opacity-70">Ilmu Komunikasi - UGM</p>
+                    </div>
+
+                    <img class="w-7 h-7 ml-3" src="./Assets/logo-zenius-small.png" alt="">
+                </div>
+            </div>
+
+            <div class="card-testimoni ">
+                <div class="image-testimoni bg-white">
+                    <img class="w-64" src="./Assets/testimoni-4.png" alt="">
+                </div>
+                <div class="profile-area mt-3 flex px-4 rounded-b-lg  shadow-lg">
+                    <img class="w-10 mt-2 h-10 mr-2" src="./Assets/profile-testimoni-4.png" alt="">
+
+                    <div class="text-area w-40 pb-4 ">
+                        <h2 class="text-base font-semibold">Stefanus Deo Alfian</h2>
+                        <p class="text-xs font-medium opacity-70">Teknik Mesin - ITB</p>
+                    </div>
+
+                    <img class="w-7 h-7 ml-3" src="./Assets/logo-zenius-small.png" alt="">
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- END TESTIMONIALS SECTION -->
+
+    <!-- START ARTICLES SECTION -->
+    <section class="articles mx-14 mt-16" id="articles">
+        <div class="article-title flex flex-wrap justify-between">
+            <h1 class="text-2xl font-bold">Cek Artikel-artikel Mind-blowing Di Blog Zenius</h1>
+            <button class="text-sm text-purple-700 px-7 py-2 border hover:bg-purple-100 border-purple-700 rounded-lg font-semibold">Lihat Blog lainnya</button>
+        </div>
+
+        <div class="article-cards flex flex-wrap justify-between">
+            
+            <div class="card-article w-64 mt-8">
+                <img class="rounded-lg w-64 h-40" src="/Assets/article-1.png" alt="">
+
+                <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
+                <h1 class="text-xl font-bold">Download gratis! Direktori Info Kampus dari Zenius</h1>
+                
+                <div class="article-action flex mt-4">
+                    <button class="text-xs font-medium px-5 py-1 border border-black rounded-full opacity-70">PDF</button>
+                    <button class="text-xs ml-2 font-medium px-5 py-1 border border-black rounded-full opacity-70">Free</button>
+                </div>
+            </div>
+            
+            <div class="card-article w-64 mt-8">
+                <img class="rounded-lg w-64 h-40" src="/Assets/article-2.png" alt="">
+
+                <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
+                <h1 class="text-xl font-bold">Gratis Download Panduan Sukses SNBT 2024</h1>
+                
+                <div class="article-action flex mt-4">
+                    <button class="text-xs font-medium px-5 py-1 border border-black rounded-full opacity-70">PDF</button>
+                    <button class="text-xs ml-2 font-medium px-5 py-1 border border-black rounded-full opacity-70">Free</button>
+                </div>
+            </div>
+            
+            <div class="card-article w-64 mt-8">
+                <img class="rounded-lg w-64 h-40" src="/Assets/article-3.png" alt="">
+
+                <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
+                <h1 class="text-xl font-bold">Download Student Planner Gratis</h1>
+                
+                <div class="article-action flex mt-4">
+                    <button class="text-xs font-medium px-5 py-1 border border-black rounded-full opacity-70">PDF</button>
+                    <button class="text-xs ml-2 font-medium px-5 py-1 border border-black rounded-full opacity-70">Free</button>
+                </div>
+            </div>
+            
+            <div class="card-article w-64 mt-8">
+                <img class="rounded-lg w-64 h-40" src="/Assets/article-4.png" alt="">
+
+                <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
+                <h1 class="text-xl font-bold">Zenius dan Pemkab Buol Gelar Pelatihan Literasi...</h1>
+                
+                <div class="article-action flex mt-4">
+                    <button class="text-xs font-medium px-5 py-1 border border-black rounded-full opacity-70">Event</button>
+                    <button class="text-xs ml-2 font-medium px-5 py-1 border border-black rounded-full opacity-70">Government</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ARTICLES SECTION -->
+
+    <!-- START FOOTER SECTION -->
+    <section class="footer mt-16 mb-16 h-72 border-t-2 border-purple-200" id="footer">
+        <div class="big-area pt-16 mx-16  h-full flex justify-between flex-wrap">
+            <div class="logo-area w-96">
+                <img class="w-32" src="/Assets/logo-zenius-landscape.svg" alt="">
+                <h1 class="text-xl font-semibold opacity-70 mt-3">Bimbel online interaktif pertama di Indonesia</h1>
+            </div>
+
+            <div class="text-area flex justify-between" style="width: 46rem;">
+                
+                <div class="col-1">
+                    <h2 class="font-bold text-base uppercase opacity-50">Perangkat Belajar</h2>
+
+                    <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
+                        <h3>ZenCore</h3>
+                        <h3>ZenPractice</h3>
+                        <h3>ZenBot</h3>
+                        <h3>Zenius TryOut</h3>
+                        <h3>Live</h3>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <h2 class="font-bold text-base uppercase opacity-50">Blog</h2>
+
+                    <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
+                        <h3>Materi Pelajaran</h3>
+                        <h3>Zenius Insight</h3>
+                        <h3>Ujian</h3>
+                        <h3>Zenius Kampus</h3>
+                        <h3>Zenius Tips</h3>
+                    </div>
+                </div>
+
+                <div class="col-3">
+
+                    <h2 class="font-bold text-base uppercase opacity-50">Tentang Kami</h2>
+
+                    <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
+                        <h3>About Us</h3>
+                        <h3>We Are Hiring</h3>
+                        <h3>Testimonial</h3>
+                        <h3>Pusat bantuan</h3>
+                        <h3>‎</h3>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <h2 class="font-bold text-base uppercase opacity-50">Hubungi Kami</h2>
+
+                    <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
+                        <div class="contact-person flex">
+                            <img src="./Assets/icon-message.svg" alt="">
+                            <p class="text-xs font-semibold ml-1 self-center">(021) 29023334</p>
+                        </div>
+                        <div class="contact-person flex">
+                            <img src="./Assets/icon-call.svg" alt="">
+                            <p class="text-xs font-semibold ml-1 self-center">cs@zeniuseducation.com</p>
+                        </div>
+                        <h3>‎</h3>
+                        <h3>‎</h3>
+                        <h3>‎</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+
+
+
+
+
 
 
     <script src="https://kit.fontawesome.com/1319cd5cd7.js" crossorigin="anonymous"></script>
