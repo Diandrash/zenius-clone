@@ -10,12 +10,12 @@
 <body class="bg-white">
 
     <!-- START NAVBAR SECTION  -->
-    <div class="nav flex bg-white justify-between p-5">
-        <div class="nav-logo self-center">
+    <div class="nav fixed right-0 left-0 top-0 z-50 flex bg-white justify-between sm:px-5 px-0 py-5">
+        <div class="nav-logo self-center sm:ml-0 ml-5">
             <img src="./Assets/logo-zenius-landscape.svg" alt="logo" class="w-24 mt-2">
         </div>
 
-        <div class="nav-list font-medium flex justify-between self-center">
+        <div class="nav-list font-medium flex sm:flex-row flex-col sm:justify-between justify-evenly sm:z-10 z-10 sm:mt-0 mt-16 sm:self-center self-auto sm:static absolute sm:h-full h-screen bg-white sm:w-auto w-full sm:translate-x-0 translate-x-full" style="transition: all 1s;">
             <h2 class="ml-5">Beranda</h2>
             <h2 class="ml-5">Materi Belajar</h2>
             <h2 class="ml-5">Paket Belajar</h2>
@@ -24,17 +24,17 @@
 
         <div class="search-box bg-gray-100 flex py-2 px-3 rounded-lg self-center border border-gray-700">
             <i class="fa-solid fa-magnifying-glass self-center"></i>
-            <input type="text" class="pr-32 pl-2 text-left bg-transparent text-base font-medium"
+            <input type="text" class="pr-32 pl-2 text-left bg-transparent text-base font-medium sm:block hidden"
                 placeholder="topics, question, tryout"
             >
-            <h2 class="text-purple-700 font-bold text-base">Cari</h2>
+            <h2 class="text-purple-700 font-bold text-base sm:block hidden">Cari</h2>
         </div>
 
         <div class="sign-up self-center py-3 px-5 rounded-lg bg-purple-600 text-white text-sm font-bold">
             <button>Sign Up/Login</button>
         </div>
 
-        <div class="nav-dropdown">
+        <div class="nav-dropdown sm:block hidden">
             
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-purple-700 bg-red-2 border border-purple-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">Zenius <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -60,27 +60,34 @@
             </div>
             
         </div>
+
+        <div class="icon-menu sm:hidden block flex mr-5 px-4 py-1 bg-gray-100 rounded-full">
+            <img src="./Assets/bars-solid.svg" alt="">
+        </div>
     </div>
     <!-- END NAVBAR SECTION  -->
 
     <!-- START HERO SECTION -->
-    <section class="hero  flex items-center justify-evenly" id="hero">
-        <div class="hero-text  mr-28" style="width: 30rem;">
-            <h1 class="text-white text-3xl font-bold ">Siap Hadapin SNBT? Bersama Zenius, Pasti Bisa!</h1>
-            <h2 class="mb-10 text-white text-base font-semibold mt-3">Kita gak cuma ngasi pelajaran, tapi cara berpikir. Tanya aja ke jutaan alumni yang udah masuk kampus idaman!</h2>
-
-
-            <button class="py-2 px-8 rounded-lg  text-purple-900 text-base font-bold bg-amber-300">Ayo Mulai!</button>
+    <section class="hero sm:mt-16 mt-24" id="hero">
+        <div class="container-hero flex flex-wrap pt-5 items-center justify-evenly">
+            <div class="hero-text sm:mx-0 mx-10 mr-28" style="width: 30rem;">
+                <h1 class="text-white text-3xl font-bold sm:mt-0 mt-10">Siap Hadapin SNBT? Bersama Zenius, Pasti Bisa!</h1>
+                <h2 class="mb-10 text-white text-base font-semibold mt-3">Kita gak cuma ngasi pelajaran, tapi cara berpikir. Tanya aja ke jutaan alumni yang udah masuk kampus idaman!</h2>
+    
+    
+                <button class="py-2 px-8 rounded-lg  text-purple-900 text-base font-bold bg-amber-300">Ayo Mulai!</button>
+            </div>
+    
+            <div class="hero-image">
+                <img src="/Assets/hero-image.png" alt="">
+            </div>
         </div>
-
-        <div class="hero-image">
-            <img src="/Assets/hero-image.png" alt="">
-        </div>
+        
     </section>
     <!-- END HERO SECTION -->
 
     <!-- START MATERIAL SECTION -->
-    <section class="material mt-10 mx-16" id="material">
+    <section class="material mt-10 mx-16 " id="material">
         <div class="material-head flex justify-between">
             <h1 class="text-xl font-bold ">Materi Belajar yang #BikinCerdasBeneran</h1>
 
@@ -121,52 +128,52 @@
             </div>
         </div>
 
-        <div class="material-cards flex justify-between flex-wrap">
+        <div class="material-cards flex sm:justify-between justify-center flex-wrap">
 
-            <div class="container-card mt-16 w-64  flex justify-center">
-                <div class="card  w-40 flex flex-col items-center text-center">
+            <div class="container-card mt-16 sm:w-64 w-44 flex justify-center">
+                <div class="card w-40 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-1.png" alt="">
                     <h2 class="text-base font-semibold">Penalaran Umum</h2>
                 </div>
             </div>
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-96 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-2.png" alt="">
                     <h2 class="text-base font-semibold">PK & Penalaran Matematika</h2>
                 </div>
             </div>
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-96 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-3.png" alt="">
                     <h2 class="text-base font-semibold">PBM, PPU, dan Literasi B. Indonesia</h2>
                 </div>
             </div>
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-40 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-4.png" alt="">
                     <h2 class="text-base font-semibold">Literasi Bahasa Inggris</h2>
                 </div>
             </div>
 
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-96 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-5.png" alt="">
                     <h2 class="text-base font-semibold">Soal-soal Penalaran Umum</h2>
                 </div>
             </div>
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-96 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-6.png" alt="">
                     <h2 class="text-base font-semibold">Soal-soal PK & Penalaran Matematika</h2>
                 </div>
             </div>
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-96 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-7.png" alt="">
                     <h2 class="text-base font-semibold">Soal-soal PBM, PPU, dan Literasi B. Indonesia</h2>
                 </div>
             </div>
-            <div class="container-card mt-16 w-64  flex justify-center">
+            <div class="container-card mt-16 sm:w-64 w-44  flex justify-center">
                 <div class="card  w-40 flex flex-col items-center text-center">
                     <img class="w-16 mt-5 mb-8" src="./Assets/material-icon-8.png" alt="">
                     <h2 class="text-base font-semibold">Soal-soal Literasi Bahasa Inggris</h2>
@@ -182,27 +189,27 @@
     <!-- START FEATURE SECTION -->
     <section class="features mx-14 mt-24" id="features">
         <div class="text-features">
-            <h1 class="text-2xl font-bold">Cek Fitur Zenius yang Bikin Belajar Tambah Seru!</h1>
+            <h1 class="text-2xl font-bold sm:text-left text-center">Cek Fitur Zenius yang Bikin Belajar Tambah Seru!</h1>
         </div>
 
-        <div class="features-items mt-14 flex justify-around">
+        <div class="features-items mt-0 flex flex-wrap justify-around">
 
-            <div class="item-feature flex flex-col items-center text-center">
+            <div class="item-feature w-44 mt-14  flex flex-col items-center text-center">
                 <img class="w-16" src="./Assets/feature-1.png" alt="">
                 <h2 class="text-base font-medium mt-6">Zenius Learning</h2>
             </div>
 
-            <div class="item-feature flex flex-col items-center text-center">
+            <div class="item-feature w-44 mt-14  flex flex-col items-center text-center">
                 <img class="w-16" src="./Assets/feature-2.png" alt="">
                 <h2 class="text-base font-medium mt-6">Try Out</h2>
             </div>
 
-            <div class="item-feature flex flex-col items-center text-center">
+            <div class="item-feature w-44 mt-14  flex flex-col items-center text-center">
                 <img class="w-16" src="./Assets/feature-3.png" alt="">
                 <h2 class="text-base font-medium mt-6">Live Class</h2>
             </div>
 
-            <div class="item-feature flex flex-col items-center text-center">
+            <div class="item-feature w-44 mt-14  flex flex-col items-center text-center">
                 <img class="w-16" src="./Assets/feature-4.png" alt="">
                 <h2 class="text-base font-medium mt-6">Zenbot</h2>
             </div>
@@ -210,19 +217,19 @@
         </div>
 
     </section>
-    <div class="images-feature mt-24 mx-10 flex flex-wrap justify-between">
-        <img class="w-96 mx-0 mt-2" src="./Assets/package-1.png" alt="">
-        <img class="w-96 mx-0 mt-2" src="./Assets/package-2.png" alt="">
-        <img class="w-96 mx-0 mt-2" src="./Assets/package-3.png" alt="">
+    <div class="images-feature mt-16 mx-10  flex flex-wrap justify-center sm:justify-between">
+        <img class="w-96 mx-0 mt-4" src="./Assets/package-1.png" alt="">
+        <img class="w-96 mx-0 mt-4" src="./Assets/package-2.png" alt="">
+        <img class="w-96 mx-0 mt-4" src="./Assets/package-3.png" alt="">
     </div>
     <!-- END FEATURE SECTION -->
 
 
     <!-- START YOUTUBE SECTION -->
     <section class="youtube h-screen bg-blue-100 mt-16" id="youtube">
-        <div class="area flex flex-col py-10 items-center text-center">
-            <h1 class="text-2xl font-bold">Tonton Kisah Alumni Zenius yang Bikin Bangga :')</h1>
-            <img src="/Assets/thumbnail.jpeg" class="w-6/12 mt-16 bg-red-200" alt="youtube thumbnail" style="border-radius: 2rem;">
+        <div class="area flex flex-col py-10 items-center text-center sm:mx-0 mx-10">
+            <h1 class="text-2xl font-bold sm:mt-0 mt-6">Tonton Kisah Alumni Zenius yang Bikin Bangga :')</h1>
+            <img src="/Assets/thumbnail.jpeg" class="sm:w-6/12 w-full sm:mt-16 mt-24 bg-red-200" alt="youtube thumbnail" style="border-radius: 2rem;">
         </div>
     </section>
     <!-- END YOUTUBE SECTION -->
@@ -230,14 +237,14 @@
     <!-- START TUTOR SECTION -->
     <section class="tutor mt-16 mx-16" id="tutor">
         <div class="tutor-title">
-            <h1 class="text-2xl font-bold">Tutor-tutor Keren Buat Bikin Belajar Asik dan Efektif!</h1>
+            <h1 class="text-2xl font-bold sm:text-left text-center">Tutor-tutor Keren Buat Bikin Belajar Asik dan Efektif!</h1>
         </div>
 
-        <div class="tutor-cards flex flex-wrap justify-between mt-10">
-            <img class="w-64 mt-3" src="./Assets/tutor-1.png" alt="">
-            <img class="w-64 mt-3" src="./Assets/tutor-2.png" alt="">
-            <img class="w-64 mt-3" src="./Assets/tutor-3.png" alt="">
-            <img class="w-64 mt-3" src="./Assets/tutor-4.png" alt="">
+        <div class="tutor-cards flex flex-wrap sm:justify-between justify-center mt-8">
+            <img class="w-64 mt-6" src="./Assets/tutor-1.png" alt="">
+            <img class="w-64 mt-6" src="./Assets/tutor-2.png" alt="">
+            <img class="w-64 mt-6" src="./Assets/tutor-3.png" alt="">
+            <img class="w-64 mt-6" src="./Assets/tutor-4.png" alt="">
         </div>
     </section>
     <!-- END TUTOR SECTION -->
@@ -245,12 +252,12 @@
     <!-- START TESTIMONIALS SECTION -->
     <section class="testimonials mx-14 mt-16" id="testimonials">
         <div class="testimonial-title">
-            <h1 class="text-2xl font-bold">Kata Mereka yang Pernah Belajar di Zenius</h1>
+            <h1 class="text-2xl font-bold sm:text-left text-center">Kata Mereka yang Pernah Belajar di Zenius</h1>
         </div>
 
-        <div class="testimonials-cards mt-8 flex justify-between flex-wrap">
+        <div class="testimonials-cards mt-8 flex sm:justify-between justify-center flex-wrap">
 
-            <div class="card-testimoni  ">
+            <div class="card-testimoni mt-5  ">
                 <div class="image-testimoni bg-white">
                     <img class="w-64" src="./Assets/testimoni-1.png" alt="">
                 </div>
@@ -266,7 +273,7 @@
                 </div>
             </div>
 
-            <div class="card-testimoni  ">
+            <div class="card-testimoni mt-5  ">
                 <div class="image-testimoni bg-white">
                     <img class="w-64" src="./Assets/testimoni-2.png" alt="">
                 </div>
@@ -282,7 +289,7 @@
                 </div>
             </div>
 
-            <div class="card-testimoni  ">
+            <div class="card-testimoni mt-5  ">
                 <div class="image-testimoni bg-white">
                     <img class="w-64" src="./Assets/testimoni-3.png" alt="">
                 </div>
@@ -298,7 +305,7 @@
                 </div>
             </div>
 
-            <div class="card-testimoni ">
+            <div class="card-testimoni mt-5 ">
                 <div class="image-testimoni bg-white">
                     <img class="w-64" src="./Assets/testimoni-4.png" alt="">
                 </div>
@@ -321,15 +328,15 @@
 
     <!-- START ARTICLES SECTION -->
     <section class="articles mx-14 mt-16" id="articles">
-        <div class="article-title flex flex-wrap justify-between">
-            <h1 class="text-2xl font-bold">Cek Artikel-artikel Mind-blowing Di Blog Zenius</h1>
-            <button class="text-sm text-purple-700 px-7 py-2 border hover:bg-purple-100 border-purple-700 rounded-lg font-semibold">Lihat Blog lainnya</button>
+        <div class="article-title flex flex-wrap sm:justify-between justify-center">
+            <h1 class="text-2xl font-bold text-center sm:text-left">Cek Artikel-artikel Mind-blowing Di Blog Zenius</h1>
+            <button class="text-sm text-purple-700 px-7 py-2 border hover:bg-purple-100 border-purple-700 rounded-lg font-semibold sm:mt-0 my-3">Lihat Blog lainnya</button>
         </div>
 
-        <div class="article-cards flex flex-wrap justify-between">
+        <div class="article-cards flex flex-wrap sm:justify-between justify-center">
             
-            <div class="card-article w-64 mt-8">
-                <img class="rounded-lg w-64 h-40" src="/Assets/article-1.png" alt="">
+            <div class="card-article sm:w-64 w-80 mt-8">
+                <img class="rounded-lg w-full h-40" src="/Assets/article-1.png" alt="">
 
                 <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
                 <h1 class="text-xl font-bold">Download gratis! Direktori Info Kampus dari Zenius</h1>
@@ -340,8 +347,8 @@
                 </div>
             </div>
             
-            <div class="card-article w-64 mt-8">
-                <img class="rounded-lg w-64 h-40" src="/Assets/article-2.png" alt="">
+            <div class="card-article sm:w-64 w-80 mt-8">
+                <img class="rounded-lg w-full h-40" src="/Assets/article-2.png" alt="">
 
                 <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
                 <h1 class="text-xl font-bold">Gratis Download Panduan Sukses SNBT 2024</h1>
@@ -352,8 +359,8 @@
                 </div>
             </div>
             
-            <div class="card-article w-64 mt-8">
-                <img class="rounded-lg w-64 h-40" src="/Assets/article-3.png" alt="">
+            <div class="card-article sm:w-64 w-80 mt-8">
+                <img class="rounded-lg w-full h-40" src="/Assets/article-3.png" alt="">
 
                 <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
                 <h1 class="text-xl font-bold">Download Student Planner Gratis</h1>
@@ -364,8 +371,8 @@
                 </div>
             </div>
             
-            <div class="card-article w-64 mt-8">
-                <img class="rounded-lg w-64 h-40" src="/Assets/article-4.png" alt="">
+            <div class="card-article sm:w-64 w-80 mt-8">
+                <img class="rounded-lg w-full h-40" src="/Assets/article-4.png" alt="">
 
                 <h2 class="text-xs mt-3 opacity-70 font-medium">By <span class="font-bold">Zenius Writer</span> on</h2>
                 <h1 class="text-xl font-bold">Zenius dan Pemkab Buol Gelar Pelatihan Literasi...</h1>
@@ -381,15 +388,15 @@
 
     <!-- START FOOTER SECTION -->
     <section class="footer mt-16 mb-16 h-72 border-t-2 border-purple-200" id="footer">
-        <div class="big-area pt-16 mx-16  h-full flex justify-between flex-wrap">
+        <div class="big-area pt-16 sm:mx-16 mx-10  h-full flex justify-between flex-wrap">
             <div class="logo-area w-96">
                 <img class="w-32" src="/Assets/logo-zenius-landscape.svg" alt="">
                 <h1 class="text-xl font-semibold opacity-70 mt-3">Bimbel online interaktif pertama di Indonesia</h1>
             </div>
 
-            <div class="text-area flex justify-between" style="width: 46rem;">
+            <div class="text-area sm:mt-0 mt-5 flex flex-wrap sm:justify-between justify-normal pb-10" style="width: 46rem;">
                 
-                <div class="col-1">
+                <div class="col-1 sm:mt-0 mt-3">
                     <h2 class="font-bold text-base uppercase opacity-50">Perangkat Belajar</h2>
 
                     <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
@@ -401,7 +408,7 @@
                     </div>
                 </div>
 
-                <div class="col-2">
+                <div class="col-2 sm:ml-0 ml-10 sm:mt-0 mt-3 ">
                     <h2 class="font-bold text-base uppercase opacity-50">Blog</h2>
 
                     <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
@@ -413,7 +420,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-3 sm:w-auto w-36 sm:mt-0 mt-9">
 
                     <h2 class="font-bold text-base uppercase opacity-50">Tentang Kami</h2>
 
@@ -426,7 +433,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 ml-16 sm:mt-0 mt-9 ">
                     <h2 class="font-bold text-base uppercase opacity-50">Hubungi Kami</h2>
 
                     <div class="flex flex-col mt-6 h-40 justify-between text-sm font-medium ">
@@ -458,5 +465,6 @@
 
     <script src="https://kit.fontawesome.com/1319cd5cd7.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
