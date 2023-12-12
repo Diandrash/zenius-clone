@@ -13,9 +13,9 @@ menu.addEventListener('click', function () {
      
 // })
 
-// for (let i = 0; i < navList.length; i++) {
-//     navList[i].addEventListener('click', function () {
-//         // alert('tes');
-//         nav.classList.toggle('translate-x-full')   
-//     })
-// }
+for (let i = 0; i < navList.length; i++) {
+    navList[i].addEventListener('click', function () {
+        // alert('tes');
+        nav.classList.remove('translate-x-0')   
+    })
+}
